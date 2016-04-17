@@ -9,7 +9,6 @@ public class EntidadeContatos {
     private String ID;
     private String Nome;
     private String Email;
-    private List<EntidadeTelefone> Telefones;
     public String getID() {
         return ID;
     }
@@ -22,12 +21,6 @@ public class EntidadeContatos {
     public void setNome(String nome) {
         Nome = nome;
     }
-    public List<EntidadeTelefone> getTelefones() {
-        return Telefones;
-    }
-    public void setTelefones(List<EntidadeTelefone> telefones) {
-        Telefones = telefones;
-    }
     public String getEmail() {
         return Email;
     }
@@ -39,6 +32,7 @@ public class EntidadeContatos {
 
     @Override
     public String toString() {
-        return Nome + "-" + Telefones.get(0);
+
+        return Nome;
     }
 }
